@@ -1,0 +1,432 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, a, input, label, div {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+footer{
+    display:none;
+}
+
+header{
+    display:none;
+}
+
+body{
+
+    background-image: url(../images/LoginPageBackground.svg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.login{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+    background-color:transparent;
+}
+
+.login .login_container{
+    height: 600px;
+    width:100%;
+    max-width: 1000px;
+    border-radius:3em;
+
+    display:grid;
+    grid-template-columns: 40% 60%;
+
+    background-color:white;
+}
+
+
+.right{
+    padding:2em;
+    padding-bottom:4em;
+    
+}
+
+.right .right_container{
+    width:100%;
+    height:100%;
+}
+
+#HearthIcon {
+    animation-name: animateIcon;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#LikeIcon {
+    animation-name: animateIcon;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+
+#ChatIcon {
+    animation-name: animateIcon;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.circle_chat {
+    animation-name: animateChatCircle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.chat_icon_c {
+    animation-name: animateChatContent;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.circle_hearth {
+    animation-name: animateHearthCircle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.hearth_icon_c {
+    animation-name: animateHearthContent;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.circle_like {
+    animation-name: animateLikeCircle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.like_icon_c {
+    animation-name: animateLikeContent;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animateIcon {
+    0%{
+        transform: translateY(0);
+    }
+
+
+    100%{
+        transform: translateY(-80px);
+    }
+}
+
+@keyframes animateLikeCircle {
+    0% {
+        fill: transparent;
+    }
+
+    10% {
+        fill: #7dc4ff;
+    }
+
+    80% {
+        fill: #7dc4ff;
+    }
+
+    90% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: transparent;
+    }
+}
+
+@keyframes animateLikeContent {
+    0% {
+        fill: transparent;
+    }
+
+    10% {
+        fill: #fff;
+    }
+
+    80% {
+        fill: #fff;
+    }
+
+    90% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: transparent;
+    }
+}
+
+
+@keyframes animateChatCircle{
+    0%{
+        fill:transparent;
+    }
+
+    10% {
+        fill: #a600b9;
+    }
+
+    80% {
+        fill: #a600b9;
+    }
+
+    90% {
+        fill: transparent;
+    }
+
+    100%{
+        fill:transparent;
+    }
+}
+
+@keyframes animateChatContent{
+    0% {
+        fill: transparent;
+    }
+
+    10% {
+        fill: #fff;
+    }
+
+    80% {
+        fill: #fff;
+    }
+
+    90% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: transparent;
+    }
+}
+
+
+@keyframes animateHearthCircle {
+    0% {
+        fill: transparent;
+    }
+
+    10% {
+        fill: #db2a58;
+    }
+
+    80% {
+        fill: #db2a58;
+    }
+
+    90% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: transparent;
+    }
+}
+
+@keyframes animateHearthContent {
+    0% {
+        fill: transparent;
+    }
+
+    10% {
+        fill: #fff;
+    }
+
+    80% {
+        fill: #fff;
+    }
+
+    90% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: transparent;
+    }
+}
+
+
+.left{
+    padding-top:3em;
+    padding-left:3em;
+}
+
+.left .title{
+    text-align:center;
+}
+
+.left .title h1{
+    font-size:3rem;
+    font-weight:700;
+    color:#4d56c1;
+}
+
+.left .description{
+    text-align:center;
+}
+
+.left .underline_container{
+    width:100%;
+    padding: 0 30%;
+}
+
+.left .underline{
+    height: 3px;
+    width:100%;
+    background-color: #4d56c1;
+    margin: 1em 0;
+}
+
+.left .description h3{
+    font-size:1.2rem;
+    margin-bottom:2em;
+}
+
+.form_container{
+    padding: 0 2em;
+}
+
+.form_validation {
+    padding: 0.2em 0;
+}
+
+.form_validation input{
+    width:100%;
+    border:none;
+    background-color: rgba(77, 86, 193, 0.60);
+    padding: 0.7em;
+    color:white;
+    text-align:center;
+    border-radius:30px;
+    transition:0.5s;
+}
+
+.form_validation input:focus{
+    outline:unset;
+    background-color: rgba(77, 86, 193, 0.80);
+}
+
+.form_validation input::placeholder{
+    color:#cbf5fc;
+}
+
+.left .error_txt{
+    height:20px;
+    color:#c32424;
+    font-weight:600;
+    font-size:0.7rem;
+    text-align:center;
+    padding: 5px 0;
+}
+
+.left .form_button {
+    padding: 0.2em 0;
+}
+
+.left .form_button button{
+    border:unset;
+    background-color:#4d56c1;
+    color:white;
+    text-align:center;
+    width:100%;
+    border-radius:30px;
+    padding:0.5em;
+    transition:0.5s;
+}
+
+.left .form_button button:hover{
+    background-color:#4f59ca;
+    transform: translateY(-1px);
+}
+
+.register_redirect{
+    margin-top:2em;
+}
+
+.register_redirect p{
+    letter-spacing: 2px;
+}
+
+.register_redirect a{
+    color:#4d56c1;
+    transition:0.5s;
+}
+
+.register_redirect a:hover{
+    color: #5b66e1;
+    text-decoration:unset;
+}
+
+
+@media screen and (max-width: 950px) {
+    .right {
+        padding: 0.5em;
+        padding-bottom: 4em;
+    }
+
+    .left {
+        padding-top: 3em;
+        padding-left: 1em;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .login{
+
+        margin-bottom:8em;
+    }
+
+    .login .login_container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'r' 'l';
+        max-width: 600px;
+        border-radius:unset;
+    }
+
+    .right {
+        grid-area: r;
+        padding:0;
+    }
+
+    .left {
+        grid-area: l;
+        padding: 0;
+    }
+
+    .form_container{
+        display:flex;   
+        justify-content:center;
+        align-content:center;
+        align-items:center;
+    }
+
+    .form_container form{
+        width:100%;
+        max-width: 400px;
+    }
+
+
+    .register_redirect {
+        margin-top: 2em;
+        padding:2em 0em;
+        text-align:center;
+    }
+}
