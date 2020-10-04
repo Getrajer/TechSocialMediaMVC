@@ -9,12 +9,15 @@ p, a, input, label, div {
     padding: 0;
 }
 
+button:focus{
+    outline:unset;
+}
 
-.page_container{
-    display:grid;
+
+.page_container {
+    display: grid;
     grid-template-columns: 20% 60% 20%;
     min-height: 100vh;
-
 }
 
 .left_panel {
@@ -44,6 +47,8 @@ p, a, input, label, div {
 
 .post {
     box-shadow: 10px 10px 20px #f0f0f0, -10px -10px 20px #f3f3f3;
+    padding-bottom: 1em;
+    margin-bottom: 5em;
 }
 
 .title_post{
@@ -61,9 +66,7 @@ p, a, input, label, div {
 
 .post_creator {
     display: flex;
-    padding: 1em 0.5em;
-    border-left: 1px solid rgba(31, 64, 109, 0.20);
-    border-right: 1px solid rgba(31, 64, 109, 0.20);
+    padding: 1em 0.8em;
 }
 
 .post_creator img{
@@ -81,6 +84,7 @@ p, a, input, label, div {
 
 .creators_name p{
     font-size:0.7rem;
+    font-weight:600;
 }
 
 .post_image_container img {
@@ -88,18 +92,15 @@ p, a, input, label, div {
 }
 
 .post_message {
-    padding: 0.5em 0.5em;
-    border-left: 1px solid rgba(31, 64, 109, 0.20);
-    border-right: 1px solid rgba(31, 64, 109, 0.20);
+    padding: 0.5em 0.8em;
 }
 
 .post_rating_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0.5em 0.3em;
+    padding: 0.5em 0.8em;
     background-color: #1f406d;
     color: white;
-    
 }
 
 .likes_rate_post{
@@ -117,7 +118,7 @@ p, a, input, label, div {
 .actions_post {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0.5em 0;
+    padding: 0.5em 0.8em;
     border-bottom: 1px solid rgba(31, 64, 109, 0.20);
     margin-bottom: 0.5em
 }
@@ -125,19 +126,23 @@ p, a, input, label, div {
 .actions_post button{
     display:block;
     border:unset;
+    color: #1f406d;
+    font-size:1.5rem;
     background-color: unset;
-    padding:0.5em 0;
+    padding:0.2em 0;
     transition:0.5s;
 }
 
 .actions_post button:hover{
     background-color: rgba(27, 50, 81, 0.70);
+    color:white;
 }
 
 .create_comment_container {
-    padding: 0.5em 0.3em;
+    padding: 0.5em 0.8em;
     display: grid;
     grid-template-columns: 60px auto;
+    border-bottom: 1px solid rgba(31, 64, 109, 0.20);
 }
 
 .input_box_create_comment{
@@ -145,11 +150,34 @@ p, a, input, label, div {
     justify-content:center;
     align-content:center;
     align-items:center;
+    padding: 0 0.5em;
 }
 
-.input_box_create_comment input{
+.input_box_create_comment textarea{
     width:100%;
-    padding: 0.5em 0.3em;
+    padding: 0.5em 1.2em;
+    height: 60px;
+    resize:none;
+    overflow-y:auto;
+    border: unset;
+    background-color: rgba(31, 64, 109, 0.70);
+    color:white;
+    border-radius: 1em;
+    transition: 0.5s;
+}
+
+.input_box_create_comment textarea:focus{
+    outline:unset;
+    background-color: rgba(31, 64, 109, 1);
+}
+
+.input_box_create_comment textarea::placeholder{
+    color:#cbf5fc;
+}
+
+
+.c_c_user_image{
+    padding-top:5px;
 }
 
 .c_c_user_image img {
@@ -158,3 +186,126 @@ p, a, input, label, div {
     border-radius: 50%;
 }
 
+.comments_feed {
+    padding: 1em 0;
+}
+
+.comment{
+    margin-bottom: 0.5em;
+    padding: 0 0.8em;
+}
+
+.user_coment_image{
+    padding-top:5px;
+}
+
+.user_coment_image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.comment_top_part{
+    display:grid;
+    grid-template-columns: 60px auto;
+}
+
+.comments_open_button{
+    background-color:unset;
+    border:unset;
+    color:white;
+    transition:0.5s;
+}
+
+.comments_open_button:hover{
+    text-decoration:underline;
+}
+
+.comment_creator {
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.comment_text{
+    padding:0.5em 1em;
+    background-color: rgba(193, 193, 193, 0.60);
+    border-radius:1em;
+}
+
+.comment_bottom_part{
+    padding-left: 60px;
+    
+}
+
+.comment_bottom_part .comment_actions{
+    display:grid;
+    grid-template-columns: 20px 20px 1fr 1fr;
+    padding-left: 1em;
+}
+
+.comment_actions button {
+    background-color: unset;
+    border: none;
+    color: #1f406d;
+    transition: 0.5s;
+    height: 20px;
+    font-size: 0.7rem;
+}
+
+.comment_actions button:hover{
+    color: #0a4eac;
+}
+
+.comment_like {
+    display: flex;
+    justify-content: center;
+}
+
+.comment_dislike {
+    display: flex;
+    justify-content: center;
+    padding-top:2px;
+}
+
+.time_of_creation{
+    text-align:center;
+}
+
+.time_of_creation p{
+    font-size:0.7rem;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.comment_rates {
+    display: flex;
+    font-size: 0.7rem;
+    justify-content:center;
+}
+
+.comment_rates .likes_rate_comment{
+    padding-right:0.5em;
+}
+
+.dislikes_rate_comment{
+    margin-top:2px;
+}
+
+.more_comments {
+    text-align: center;
+    border-top: 1px solid rgba(31, 64, 109, 0.20);
+    padding: 1em 0 0 0;
+}
+
+.more_comments button{
+    background-color: unset;
+    border:unset;
+    transition:0.5s;
+    padding: 0.5em 1em;
+
+}
+
+.more_comments button:hover{
+    background-color:rgba(31, 64, 109, 0.70);
+    color:white;
+}

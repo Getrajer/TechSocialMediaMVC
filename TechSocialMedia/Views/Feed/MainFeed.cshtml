@@ -52,24 +52,24 @@
                     <div class="post_rating_container">
                         <div class="post_rates">
                             <div class="likes_rate_post">
-                                <p>100 (L)</p>
+                                <p><i class="fas fa-thumbs-up"></i> 100</p>
                             </div>
 
                             <div class="dislikes_rate_post">
-                                <p>10 (DL)</p>
+                                <p><i class="fas fa-thumbs-down"></i> 10</p>
                             </div>
                         </div>
 
                         <div class="comments_rate">
-                            <p>
+                            <button class="comments_open_button">
                                 20 Comments
-                            </p>
+                            </button>
                         </div>
                     </div>
 
                     <div class="actions_post">
-                        <button>Like</button>
-                        <button>Dislike</button>
+                        <button><i class="fas fa-thumbs-up"></i></button>
+                        <button><i class="fas fa-thumbs-down"></i></button>
                     </div>
 
                     <div class="create_comment">
@@ -78,46 +78,52 @@
                                 <img src="~/post_images/biker.jpg"/>
                             </div>
                             <div class="input_box_create_comment">
-                                <input placeholder="Write a comment"/>
+                                <textarea placeholder="Write a comment"> </textarea>
                             </div>
                         </div>
                     </div>
 
                     <div class="comments_feed">
-                        <div class="top_comment">
-                            <div class="user_coment_image">
-                                <img src="~/post_images/biker.jpg" />
+                        <div class="comment">
+                            <div class="comment_top_part">
+                                <div class="user_coment_image">
+                                    <img src="~/post_images/biker.jpg" />
+                                </div>
+                                <div class="comment_text">
+                                    <p class="comment_creator">Michal Kajdas</p>
+                                    <p>
+                                        Solo pod wiatr nie nafika człek. 😉 Niech noga podaje zgodnie z życzeniami a kraksy niech się trzymają z daleka! Powodzenia!
+                                    </p>
+                                </div>
                             </div>
-                            <div class="comment">
-                                <p>
-                                    Michal Kajdas
-                                    Solo pod wiatr nie nafika człek. 😉 Niech noga podaje zgodnie z życzeniami a kraksy niech się trzymają z daleka! Powodzenia!
-                                </p>
-                            </div>
-                            <div class="comment_actions">
-                                <div class="comment_like">
-                                    <p>(L)</p>
-                                </div>
-                                <div class="comment_dislike">
-                                    <p>(DL)</p>
-                                </div>
-                                <div class="time_of_creation">
-                                    <p>3days</p>
-                                </div>
-                                <div class="comment_rates">
-                                    <div class="likes_rate_comment">
-                                        <p>100 (L)</p>
-                                    </div>
 
-                                    <div class="dislikes_rate_comment">
-                                        <p>10 (DL)</p>
+                            <div class="comment_bottom_part">
+                                <div class="comment_actions">
+                                    <div class="comment_like">
+                                        <button><i class="fas fa-thumbs-up"></i></button>
+                                    </div>
+                                    <div class="comment_dislike">
+                                        <button><i class="fas fa-thumbs-down"></i></button>
+                                    </div>
+                                    <div class="time_of_creation">
+                                        <p>3days ago</p>
+                                    </div>
+                                    <div class="comment_rates">
+                                        <div class="likes_rate_comment">
+                                            <p><i class="fas fa-thumbs-up"></i> 100</p>
+                                        </div>
+
+                                        <div class="dislikes_rate_comment">
+                                            <p><i class="fas fa-thumbs-down"></i> 20</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
 
                         <div class="more_comments">
-                            <p>Load more comments</p>
+                            <button>Load more comments</button>
                         </div>
                     </div>
 
