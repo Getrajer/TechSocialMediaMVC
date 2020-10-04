@@ -62,22 +62,28 @@ form{
     grid-template-columns: 1fr 1fr;
 }
 
-label{
-    display:block;
-    text-align:center;
-    letter-spacing:2px;
+.phone_number_input {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+label {
+    display: block;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0.2em 0;
     font-weight: 600;
 }
 
 .input_box{
-    margin: 1em 0;
+    margin: 0.5em 0;
 }
 
 input {
     width: 100%;
     border: none;
     background-color: rgba(77, 86, 193, 0.60);
-    padding: 0.7em;
+    padding: 0.7em 0;
     color: white;
     text-align: center;
     border-radius: 30px;
@@ -98,9 +104,18 @@ input::placeholder {
     padding: 0 1em;
 }
 
-.button_container{
+.error_form {
+    height: 10px;
+    color: #c32424;
+    font-weight: 600;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.button_container {
     padding: 0 1em;
-    margin-top: 4em;
+    margin-top: 3em;
 }
 
 .button_container button {

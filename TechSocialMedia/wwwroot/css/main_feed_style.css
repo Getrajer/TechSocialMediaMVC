@@ -1,0 +1,160 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, a, input, label, div {
+    margin: 0;
+    padding: 0;
+}
+
+
+.page_container{
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+    min-height: 100vh;
+
+}
+
+.left_panel {
+    background-color: #1f406d;
+}
+
+.feed {
+    background-color: white;
+}
+
+.right_panel {
+    background-color:  #1f406d;
+}
+
+/*Post feed*/
+
+.feed{
+    display:flex;
+    justify-content:center;
+    padding-top: 3em;
+}
+
+.feed_container{
+    width:100%;
+    max-width:600px;
+}
+
+.post {
+    box-shadow: 10px 10px 20px #f0f0f0, -10px -10px 20px #f3f3f3;
+}
+
+.title_post{
+    text-align:center;
+    background-color:#1f406d;
+    padding: 0.5em 0;
+}
+
+.title_post h1{
+    color:white;
+    font-size:1.8rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.post_creator {
+    display: flex;
+    padding: 1em 0.5em;
+    border-left: 1px solid rgba(31, 64, 109, 0.20);
+    border-right: 1px solid rgba(31, 64, 109, 0.20);
+}
+
+.post_creator img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+.creators_name{
+    padding-left: 1em;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.creators_name p{
+    font-size:0.7rem;
+}
+
+.post_image_container img {
+    width: 100%;
+}
+
+.post_message {
+    padding: 0.5em 0.5em;
+    border-left: 1px solid rgba(31, 64, 109, 0.20);
+    border-right: 1px solid rgba(31, 64, 109, 0.20);
+}
+
+.post_rating_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5em 0.3em;
+    background-color: #1f406d;
+    color: white;
+    
+}
+
+.likes_rate_post{
+    padding-right: 1em;
+}
+
+.post_rates {
+    display: flex;
+}
+
+.comments_rate{
+    text-align:right;
+}
+
+.actions_post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5em 0;
+    border-bottom: 1px solid rgba(31, 64, 109, 0.20);
+    margin-bottom: 0.5em
+}
+
+.actions_post button{
+    display:block;
+    border:unset;
+    background-color: unset;
+    padding:0.5em 0;
+    transition:0.5s;
+}
+
+.actions_post button:hover{
+    background-color: rgba(27, 50, 81, 0.70);
+}
+
+.create_comment_container {
+    padding: 0.5em 0.3em;
+    display: grid;
+    grid-template-columns: 60px auto;
+}
+
+.input_box_create_comment{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+}
+
+.input_box_create_comment input{
+    width:100%;
+    padding: 0.5em 0.3em;
+}
+
+.c_c_user_image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
