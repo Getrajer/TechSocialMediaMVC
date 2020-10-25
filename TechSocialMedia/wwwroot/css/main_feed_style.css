@@ -49,12 +49,15 @@ button:focus{
     box-shadow: 10px 10px 20px #f0f0f0, -10px -10px 20px #f3f3f3;
     padding-bottom: 1em;
     margin-bottom: 5em;
+    border-radius:0.5em;
 }
 
-.title_post{
-    text-align:center;
-    background-color:#1f406d;
+.title_post {
+    text-align: center;
+    background-color: #1f406d;
     padding: 0.5em 0;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
 }
 
 .title_post h1{
@@ -97,13 +100,34 @@ button:focus{
 
 .post_rating_container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 0.5em 0.8em;
     background-color: #1f406d;
     color: white;
 }
 
-.likes_rate_post{
+.save_post{
+    text-align:center;
+}
+
+.save_post button{
+    background-color:unset;
+    border:1px solid white;
+    height: 13px;
+    width:13px;
+    margin-left: 0.5em;
+    padding-top:3px;
+    color:white;
+    border-radius:50%;
+    transition:0.5s;
+}
+
+.save_post button:hover{
+    background-color:white;
+    color:#1f406d;
+}
+
+.likes_rate_post {
     padding-right: 1em;
 }
 
